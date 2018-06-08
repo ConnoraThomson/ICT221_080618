@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<GridPane fx:id="rowContainer" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="600.0" style="-fx-border-style: solid;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="au.edu.usc.bict_explorer.controllers.CareerRowController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="34.0" prefWidth="100.0" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="34.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="32.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="100.8" minHeight="10.0" prefHeight="58.40001220703125" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="47.9999755859375" minHeight="0.0" prefHeight="39.99998779296875" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <VBox>
+         <children>
+            <Label fx:id="careerTitle" style="-fx-font-weight: bold;" text="Label" />
+         </children>
+      </VBox>
+      <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1">
+         <children>
+            <Label fx:id="minorInformation" style="-fx-font-weight: bold;" text="Label" />
+         </children>
+      </VBox>
+      <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2">
+         <children>
+            <Label fx:id="careerDescription" style="-fx-font-weight: bold;" text="Label" wrapText="true" />
+         </children>
+      </VBox>
+      <Button fx:id="selectButton" mnemonicParsing="false" prefHeight="26.0" prefWidth="185.0" style="-fx-background-color: #FF0; -fx-background-radius: 30; -fx-font-weight: bold;" text="Select" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+   </children>
+</GridPane>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<GridPane fx:id="rowContainer" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="47.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="au.edu.usc.bict_explorer.controllers.OptionRowController">
+  <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="25.0" minWidth="25.0" prefWidth="25.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="250.0" minWidth="10.0" prefWidth="100.0" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="100.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="100.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints />
+  </rowConstraints>
+   <children>
+      <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1">
+         <children>
+            <Label fx:id="textLabel1" text="Label" wrapText="true" />
+         </children>
+      </VBox>
+      <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2">
+         <children>
+            <Label fx:id="textLabel2" text="Label" wrapText="true" />
+         </children>
+      </VBox>
+      <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="3">
+         <children>
+            <Label fx:id="textLabel3" text="Label" wrapText="true" />
+         </children>
+      </VBox>
+      <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="4">
+         <children>
+            <Label fx:id="textLabel4" text="Label" wrapText="true" />
+         </children>
+      </VBox>
+      <VBox>
+         <children>
+            <CheckBox fx:id="optionCheckBox" mnemonicParsing="false" />
+         </children>
+      </VBox>
+   </children>
+</GridPane>
